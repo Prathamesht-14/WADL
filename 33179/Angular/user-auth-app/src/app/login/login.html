@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Login</h2>
+  
+    <input [(ngModel)]="email" placeholder="Email">
+    <input [(ngModel)]="password" type="password" placeholder="Password">
+  
+    <button (click)="loginUser()">Login</button>
+  
+    <p>New user? <a routerLink="/register">Register</a></p>
+  </div>
