@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-role="page">
+
+        <!-- HEADER -->
+        <div data-role="header" data-theme="b">
+            <h1>My Website</h1>
+        </div>
+
+        <!-- NAVBAR -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+                <li><a href="about.html" data-ajax="false">About</a></li>
+                <li><a href="login_register.html" data-ajax="false">Register</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTENT -->
+        <div role="main" class="ui-content">
+
+            <h3 style="text-align:center;">Gallery</h3>
+
+            <!-- GRID GALLERY -->
+            <div class="ui-grid-b gallery">
+
+                <div class="ui-block-a card"><img src="https://picsum.photos/300?1"></div>
+                <div class="ui-block-b card"><img src="https://picsum.photos/300?2"></div>
+                <div class="ui-block-c card"><img src="https://picsum.photos/300?3"></div>
+
+                <div class="ui-block-a card"><img src="https://picsum.photos/300?4"></div>
+                <div class="ui-block-b card"><img src="https://picsum.photos/300?5"></div>
+                <div class="ui-block-c card"><img src="https://picsum.photos/300?6"></div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div data-role="footer" data-position="fixed">
+            <h4>© 2026 My Website</h4>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
