@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website - Register</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="register">
+
+    <div data-role="header" data-theme="b">
+        <a href="index.html" data-icon="back" data-rel="back" title="Go back" data-ajax="false">Back</a>
+        <h1>My Website</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-transition="slide" data-direction="reverse" data-icon="home" data-ajax="false">Home</a></li>
+                <li><a href="about.html" data-transition="slide" data-direction="reverse" data-icon="info" data-ajax="false">About</a></li>
+                <li><a href="login_register.html" class="ui-btn-active ui-state-persist" data-icon="user" data-ajax="false">Register</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div role="main" class="ui-content">
+        <h2 style="text-align: center;">User Registration</h2>
+        
+        <form action="#" method="post" style="max-width: 400px; margin: 0 auto;">
+            <div class="ui-field-contain">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter username" required>
+            </div>
+            
+            <div class="ui-field-contain">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+            </div>
+            
+            <div class="ui-field-contain">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+            </div>
+            
+            <input type="submit" value="Register Now" data-theme="b" data-icon="check">
+        </form>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 style="text-align: center;">&copy; 2026 My Website</h4>
+    </div>
+
+</div>
+
+</body>
+</html>
