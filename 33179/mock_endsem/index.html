@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prathamesh Talekar - Portfolio</title>
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FontAwesome for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Custom Script before JQM to bind mobileinit -->
+    <script src="js/script.js"></script>
+    <!-- jQuery Mobile JS -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div data-role="page" id="home" data-theme="b">
+        <div data-role="header" data-position="fixed" class="custom-header">
+            <h1>Portfolio</h1>
+        </div>
+
+        <div role="main" class="ui-content center-content">
+            <div class="profile-container fade-in">
+                <img src="assets/profile.jpg" alt="Prathamesh Talekar" class="profile-img">
+            </div>
+            <h2 class="welcome-title fade-in delay-1">Hi, I'm Prathamesh Talekar</h2>
+            <p class="tagline fade-in delay-1">Third Year IT Student | Full Stack Developer</p>
+            
+            <ul data-role="listview" data-inset="true" class="nav-menu fade-in delay-2">
+                <li><a href="#about" data-transition="slide" class="nav-btn"><i class="fa-solid fa-user"></i> About Me</a></li>
+                <li><a href="#projects" data-transition="slide" class="nav-btn"><i class="fa-solid fa-briefcase"></i> Projects</a></li>
+                <li><a href="#skills" data-transition="slide" class="nav-btn"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li><a href="#contact" data-transition="slide" class="nav-btn"><i class="fa-solid fa-envelope"></i> Contact Info</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer">
+            <h4>&copy; 2026 Prathamesh Talekar</h4>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about" data-theme="b">
+        <div data-role="header" data-position="fixed" class="custom-header">
+            <a href="#home" data-icon="carat-l" data-iconpos="notext" data-transition="slide" data-direction="reverse">Back</a>
+            <h1>About Me</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="card fade-in">
+                <h3 class="card-title">Prathamesh Talekar</h3>
+                <h4 class="card-subtitle">Third Year IT Engineering Student (SPPU)</h4>
+                <p class="card-text">
+                    I am a Third Year Information Technology student at SPPU with a strong interest in full stack web development and problem solving. I enjoy building real-world applications using modern technologies like Node.js, Express, and MongoDB. I have worked on multiple academic and personal projects including an AQI Monitoring System and inventory-based applications. I am also actively improving my problem-solving skills through platforms like Codeforces. I am passionate about learning new technologies and building impactful solutions.
+                </p>
+            </div>
+            
+            <div class="card fade-in delay-1">
+                <h3 class="card-title"><i class="fa-solid fa-heart"></i> Interests</h3>
+                <ul data-role="listview" data-inset="true" class="interests-list">
+                    <li>Web Development (Node.js, Express, MongoDB)</li>
+                    <li>AQI Project</li>
+                    <li>Problem Solving (Codeforces)</li>
+                </ul>
+            </div>
+            
+            <div class="card fade-in delay-2">
+                <h3 class="card-title"><i class="fa-solid fa-bullseye"></i> Career Goal</h3>
+                <p class="card-text">To become a skilled software engineer and build scalable real-world applications.</p>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer nav-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a></li>
+                    <li><a href="#about" data-icon="info" class="ui-btn-active ui-state-persist">About</a></li>
+                    <li><a href="#projects" data-icon="grid" data-transition="slide">Projects</a></li>
+                    <li><a href="#skills" data-icon="star" data-transition="slide">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div data-role="page" id="projects" data-theme="b">
+        <div data-role="header" data-position="fixed" class="custom-header">
+            <a href="#home" data-icon="carat-l" data-iconpos="notext" data-transition="slide" data-direction="reverse">Back</a>
+            <h1>Projects</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="project-card fade-in">
+                <h3 class="project-title">AarogyaAI</h3>
+                <p class="project-desc">A smart AQI Monitoring and Environmental Analysis System using real-time air pollution data and satellite data to calculate AQI and provide health recommendations. Includes a chatbot for guidance.</p>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">React</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Sentinel Hub</span>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-1">
+                <h3 class="project-title">CreditWise</h3>
+                <p class="project-desc">A financial management system designed to track expenses, manage budgets, and analyze spending patterns for better financial decisions.</p>
+                <div class="tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-2">
+                <h3 class="project-title">Blog Website</h3>
+                <p class="project-desc">A full-stack blog platform featuring user authentication, post creation, and comments.</p>
+                <div class="tags">
+                    <span class="tag">JWT Auth</span>
+                    <span class="tag">Node.js</span>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-3">
+                <h3 class="project-title">Inventory Management System</h3>
+                <p class="project-desc">A robust system for tracking stock levels, orders, and deliveries efficiently.</p>
+                <div class="tags">
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Express</span>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in delay-4">
+                <h3 class="project-title">Grocery Management System</h3>
+                <p class="project-desc">A web app for managing grocery items, pricing, and inventory.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer nav-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a></li>
+                    <li><a href="#about" data-icon="info" data-transition="slide" data-direction="reverse">About</a></li>
+                    <li><a href="#projects" data-icon="grid" class="ui-btn-active ui-state-persist">Projects</a></li>
+                    <li><a href="#skills" data-icon="star" data-transition="slide">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Page -->
+    <div data-role="page" id="skills" data-theme="b">
+        <div data-role="header" data-position="fixed" class="custom-header">
+            <a href="#home" data-icon="carat-l" data-iconpos="notext" data-transition="slide" data-direction="reverse">Back</a>
+            <h1>Skills</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="card fade-in">
+                <h3 class="card-title">Languages</h3>
+                <div class="skill-container">
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="card fade-in delay-1">
+                <h3 class="card-title">Web Technologies</h3>
+                <div class="skill-container">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Express.js</span>
+                </div>
+            </div>
+
+            <div class="card fade-in delay-2">
+                <h3 class="card-title">Database</h3>
+                <div class="skill-container">
+                    <span class="skill-badge">MongoDB</span>
+                    <span class="skill-badge">MySQL</span>
+                </div>
+            </div>
+
+            <div class="card fade-in delay-3">
+                <h3 class="card-title">Tools & Platforms</h3>
+                <div class="skill-container">
+                    <span class="skill-badge">Git & GitHub</span>
+                    <span class="skill-badge">Postman</span>
+                    <span class="skill-badge">VS Code</span>
+                </div>
+            </div>
+
+            <div class="card fade-in delay-4">
+                <h3 class="card-title">Core Concepts</h3>
+                <ul data-role="listview" data-inset="true">
+                    <li>Data Structures & Algorithms</li>
+                    <li>REST APIs</li>
+                    <li>JWT Authentication</li>
+                    <li>MVC Architecture</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer nav-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a></li>
+                    <li><a href="#about" data-icon="info" data-transition="slide" data-direction="reverse">About</a></li>
+                    <li><a href="#projects" data-icon="grid" data-transition="slide" data-direction="reverse">Projects</a></li>
+                    <li><a href="#skills" data-icon="star" class="ui-btn-active ui-state-persist">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact" data-theme="b">
+        <div data-role="header" data-position="fixed" class="custom-header">
+            <a href="#home" data-icon="carat-l" data-iconpos="notext" data-transition="slide" data-direction="reverse">Back</a>
+            <h1>Contact Info</h1>
+            <a href="#home" data-icon="home" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div class="card fade-in">
+                <ul data-role="listview" data-inset="true" class="contact-list">
+                    <li><a href="mailto:prathamesh@example.com"><i class="fa-solid fa-envelope"></i> prathamesh@example.com</a></li>
+                    <li><a href="tel:+919876543210"><i class="fa-solid fa-phone"></i> +91 9876543210</a></li>
+                    <li><a href="https://linkedin.com/in/prathamesh-talekar" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/prathamesh-talekar" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+
+            <div class="card fade-in delay-1">
+                <h3 class="card-title">Send a Message</h3>
+                <form action="#" method="post" id="contactForm">
+                    <label for="name" class="ui-hidden-accessible">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    
+                    <label for="email" class="ui-hidden-accessible">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    
+                    <label for="message" class="ui-hidden-accessible">Message:</label>
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" class="ui-btn ui-btn-b ui-corner-all custom-btn">Submit Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer nav-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide" data-direction="reverse">Home</a></li>
+                    <li><a href="#about" data-icon="info" data-transition="slide" data-direction="reverse">About</a></li>
+                    <li><a href="#projects" data-icon="grid" data-transition="slide" data-direction="reverse">Projects</a></li>
+                    <li><a href="#contact" data-icon="mail" class="ui-btn-active ui-state-persist">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
