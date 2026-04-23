@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Equipment Rental Platform</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #2e7d32;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background-image: url("image.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+
+    margin-top: 80px;   /* 👈 ADD THIS */
+}
+
+
+        .hero-box h1 {
+            color: #2e7d32;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="home_css.html">Home</a>
+    <a href="equipment_css.html">Register Equipment</a>
+    <a href="listing_bootstrap.html">Equipment List</a>
+    <a href="login_bootstrap.html">Login</a>
+</nav>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("success") === "true") {
+        alert("File is successful registration");
+    }
+</script>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-box">
+        <h1>Farmer Equipment Sharing Platform</h1>
+        <p>
+            A platform that helps farmers rent and share agricultural equipment
+            such as tractors, harvesters, and ploughs at affordable prices.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

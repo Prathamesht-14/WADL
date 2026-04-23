@@ -111,6 +111,7 @@ http.createServer((req, res) => {
 
         <!-- Added Button -->
         <a class="btn" href="/about.html">Go to About Page</a>
+        <a class="btn" href="/contact.html">Go to Contact Page</a>
     </div>
 
     <div class="footer">

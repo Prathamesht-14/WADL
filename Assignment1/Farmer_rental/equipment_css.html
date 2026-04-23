@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equipment Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef1f5;
+        }
+
+        nav {
+            background-color: #2e7d32;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        form {
+            background-color: white;
+            width: 45%;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Link external JS -->
+    <script src="equipment.js" defer></script>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="home_css.html">Home</a>
+    <a href="equipment_css.html">Register Equipment</a>
+    <a href="equipment_list_bootstrap.html">Equipment List</a>
+    <a href="login_bootstrap.html">Login</a>
+</nav>
+
+<form onsubmit="return validateForm()">
+    <h2>Farmer Equipment Registration</h2>
+
+    <label>Farmer Name</label>
+    <input type="text" id="name" required>
+
+    <label>Email</label>
+    <input type="email" id="email" required>
+
+    <label>Mobile Number</label>
+    <input type="text" id="mobile" required>
+
+    <label>Password</label>
+    <input type="password" id="password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" id="confirmPassword" required>
+
+    <label>Gender</label>
+    <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+
+    <label>City</label>
+    <select>
+        <option>Other</option>
+        <option>Pune</option>
+        <option>Nashik</option>
+        <option>Kolhapur</option>
+        <option>Other</option>
+    </select>
+
+    <label>Address</label>
+    <textarea rows="3"></textarea>
+
+    <label>Equipment Name (Optional)</label>
+    <select>
+        <option>Other</option>
+        <option>Tractor</option>
+        <option>Harvester</option>
+        <option>Rotavator</option>
+        <option>Plough</option>
+        <option>Other</option>
+    </select>
+
+    <label>Equipment Description</label>
+    <textarea rows="3"></textarea>
+
+    <label>Equipment Age</label>
+   <input type="number" id="equipmentAge" placeholder="e.g. 2" min="0">
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
